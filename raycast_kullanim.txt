@@ -1,0 +1,16 @@
+
+# kullanımı:
+intersection = ray_sphere_intersection_GPU(center, direction-center, points, radius)
+# center: ışın merkezi 1x3 array
+# direction: ışın vektörleri. radians cinsinden Nx3 array
+# points: teste tabi noktalar Mx3 array
+# radius: noktalardan küre oluşturmak için yarıçap
+# sonuç olarak boolean şekilde ışın bazında keisişim testi sonucu döndürüyor. Nx3 array
+
+
+visualize_points([direction[intersection]) #sonucu 3d görselleştirme
+
+requirements: 
+numba                     0.60.0                   pypi_0    pypi
+numpy                     1.26.4           py39h5f9d8c6_0
+open3d                    0.19.0                   pypi_0    pypi
