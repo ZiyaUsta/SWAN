@@ -1,10 +1,9 @@
-from numba import njit, prange, jit
+#from numba import njit, prange, jit
 import numpy as np
-import open3d as o3d
 
-@jit(nopython=True)
+#@jit(nopython=True)
 def ray_sphere_intersection_GPU(ray_origin, ray_dirs, sphere_centers, sphere_radius):
-    # ray_dirs = normalize_vectors_GPU(ray_dirs)
+
     n = ray_dirs.shape[0]
     m = sphere_centers.shape[0]
     results_per_ray = np.zeros(n, dtype=np.bool_)
@@ -20,7 +19,7 @@ def ray_sphere_intersection_GPU(ray_origin, ray_dirs, sphere_centers, sphere_rad
                 results_per_ray[r] = True  # Intersection detected
                 break  # No need to check other spheres for this ray
     return results_per_ray
-    
+'''''
 def visualize_points(points):
     """
     Visualize 3D points using Open3D.
@@ -35,3 +34,4 @@ def visualize_points(points):
 
     # Visualize the point cloud
     o3d.visualization.draw_geometries([pcd])
+'''''
