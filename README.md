@@ -145,9 +145,6 @@ Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) and include tests for ne
 ## License
 SWAN is licensed under the [MIT License](LICENSE).
 
-## Citation
-If you use SWAN in your research, please cite our *SoftwareX* article:
-> [Insert Authors], "[Insert Article Title]," *SoftwareX*, vol. [Insert Volume], [Insert Year], DOI: [Insert DOI].
 
 ## Contact
-For questions or support, contact [Your Name] at [your.email@example.com] or open an issue on GitHub.
+For questions or support, contact [Your Name] at [ziyausta@artvin.edu.tr] or open an issue on GitHub.
