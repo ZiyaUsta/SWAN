@@ -17,7 +17,7 @@ SWAN (Shadow Analysis for 3D City Models) is an open-source Python tool designed
 
 ### Prerequisites
 - **Python**: 3.8 or higher
-- **PostgreSQL**: With PostGIS extension enabled (`CREATE EXTENSION postgis;`)
+- **PostgreSQL**: With PostGIS extension enabled (`CREATE EXTENSION postgis;`)(Only required for database integration not mandatory!)
 - **System Dependencies** (for `psycopg2`):
   ```bash
   # Ubuntu/Debian
@@ -163,11 +163,10 @@ Contributions are welcome! To contribute:
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a Pull Request.
 
-Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) and include tests for new features.
 
 ## License
 SWAN is licensed under the [MIT License](LICENSE).
 
 
 ## Contact
-For questions or support, contact [Ziya Usta] at [ziyausta@artvin.edu.tr] or open an issue on GitHub.
+For questions or support, contact Ziya Usta at [ziyausta@artvin.edu.tr] or open an issue on GitHub.
