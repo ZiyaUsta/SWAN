@@ -8,7 +8,7 @@ from astral import LocationInfo
 import time
 
 def main():
-    input_file = "Rotterdam_validity.city.json"
+    input_file = "Rotterdam.city.json"
     spacing = 2.0
     points_output_file = "all_surface_points_with_shadow.json"
     start_date = "2025-01-15"
@@ -57,7 +57,7 @@ def main():
                 exporter.close_connection()
 
     except Exception as e:
-        print(f"Hata: {str(e)}")
+        print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
     main()

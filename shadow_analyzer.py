@@ -12,7 +12,7 @@ class ShadowAnalyzer:
         vertices = np.array(cm['vertices'], dtype=np.float32)
         bina_to_geom_id = {}
         
-        for bina_id, co in tqdm(cm.get('CityObjects', {}).items(), desc="Sahne oluşturuluyor"):
+        for bina_id, co in tqdm(cm.get('CityObjects', {}).items(), desc="Creating the scene"):
             if co.get('type') == 'Building':
                 all_vertices = []
                 all_faces = []
@@ -81,7 +81,7 @@ class ShadowAnalyzer:
         """Tüm noktalar için kesişim kontrolü ve shadow hesaplama."""
         scene, bina_to_geom_id = ShadowAnalyzer.create_open3d_scene(cm)
         
-        for bina_id, bina_points_info in tqdm(points_info.items(), desc="Binalar için kesişim kontrolü"):
+        for bina_id, bina_points_info in tqdm(points_info.items(), desc="Intersection checks for all buildings"):
             updated_points_info = ShadowAnalyzer.process_bina_intersections(bina_id, bina_points_info, sun_directions, scene, bina_to_geom_id, total_days)
             points_info[bina_id] = updated_points_info
         
